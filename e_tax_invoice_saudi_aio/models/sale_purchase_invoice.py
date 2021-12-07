@@ -14,6 +14,7 @@ class AccountMove(models.Model):
 
 	date_due = fields.Date('Date Due')
 	invoice_date_supply = fields.Date('Date Of Supply')
+	l10n_sa_confirmation_datetime = fields.Datetime()
 
 
 	def get_product_arabic_name(self,pid):
